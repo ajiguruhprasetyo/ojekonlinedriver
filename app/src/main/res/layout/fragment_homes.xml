@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="0dp"
+            app:contentPadding="5dp" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:elevation="12dp"
+                    app:cardCornerRadius="75dp"
+                    android:layout_centerHorizontal="true"
+                    android:innerRadius="0dp"
+                    android:shape="ring"
+                    android:thicknessRatio="1.9"
+                    app:cardBackgroundColor="?attr/colorPrimary">
+                    <ImageView
+                        app:srcCompat="@drawable/noimage"
+                        android:id="@+id/img_photo"
+                        android:scaleType="centerCrop"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp" />
+                </android.support.v7.widget.CardView>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Nama "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_nama"
+                        android:drawableLeft="@drawable/ic_action_person"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:text="Email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/email"
+                        android:drawableLeft="@drawable/ic_action_email"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:text="Phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/phone"
+                        android:drawableLeft="@drawable/ic_action_phone"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:text="Home"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/address"
+                        android:drawableLeft="@drawable/ic_action_home"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="0dp"
+            app:contentPadding="5dp" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Ringkasan Pendapatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:id="@+id/pendapatan" />
+
+                <TextView
+                    android:text="10 Transaksi (Rp.100000)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_pendapatan" />
+
+                <TextView
+                    android:text="Setoran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:text="10 Transaksi (Rp.100000)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_setoran" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="0dp">
+
+            <Button
+                android:text="Ganti Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_changepassword"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/ic_action_pencil"
+                style="@style/Widget.AppCompat.Button.Borderless" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="0dp"
+            app:contentPadding="5dp"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:elevation="12dp"
+                    android:id="@+id/view2"
+                    app:cardCornerRadius="75dp"
+                    android:layout_centerHorizontal="true"
+                    android:innerRadius="0dp"
+                    android:shape="ring"
+                    android:thicknessRatio="1.9"
+                    app:cardBackgroundColor="?attr/colorPrimary">
+                    <ImageView
+                        app:srcCompat="@drawable/noimage"
+                        android:id="@+id/img_kendaraan"
+                        android:scaleType="centerCrop"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp" />
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Nama Kendaraan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_nama_kendaraan"
+                        android:drawableLeft="@drawable/ic_pencil_small"
+                        android:gravity="left|center_vertical" />
+
+                    <TextView
+                        android:text="No Pol"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_nopol"
+                        android:gravity="left|center_vertical"
+                        android:drawableLeft="@drawable/ic_small_brand" />
+
+                    <TextView
+                        android:text="Merek"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_merek"
+                        android:gravity="left|center_vertical"
+                        android:drawableLeft="@drawable/ic_small_label" />
+
+                    <TextView
+                        android:text="Tipe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_tipe"
+                        android:gravity="left|center_vertical"
+                        android:drawableLeft="@drawable/ic_small_motorcycle" />
+
+                    <TextView
+                        android:text="Tahun"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_tahun"
+                        android:gravity="left|center_vertical"
+                        android:drawableLeft="@drawable/ic_small_time" />
+
+                    <TextView
+                        android:text="Silinder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_silinder"
+                        android:gravity="left|center_vertical"
+                        android:drawableLeft="@drawable/ic_small_donut" />
+
+                    <TextView
+                        android:text="Warna"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_warna"
+                        android:gravity="left|center_vertical"
+                        android:drawableLeft="@drawable/ic_small_brush" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">RigenDriver</string>
+    <string name="server">http://202.152.148.26/</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyD7w0Gm2U_eK9u4R-ZYsrqpvnCb91OU_V4</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

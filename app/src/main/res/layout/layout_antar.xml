@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_dark"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_people_location"
+            android:id="@+id/imageView2" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="Nama Pelanggan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:text="Pelanggan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_pelanggan"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="normal|bold" />
+        </LinearLayout>
+
+        <TextView
+            android:text="10 KM"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/txt_jarak"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="normal|bold"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="TUNAI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                android:textColor="@android:color/white"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="right" />
+
+            <TextView
+                android:text="Rp.10.000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_tunai"
+                android:textColor="@android:color/white"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="normal|bold"
+                android:gravity="right" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:padding="10dp">
+
+            <TextView
+                android:text="Dari :"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                app:srcCompat="@android:color/background_light" />
+
+            <TextView
+                android:text="Condong Catur, Sleman, Yogyakarta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_dari"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:text="Pelanggan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_pelanggan"
+                android:layout_gravity="center"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="casual"
+                android:textStyle="normal|bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@drawable/scale">
+
+            <TextView
+                android:text="Ke : "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@android:color/black"
+                android:gravity="right" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                app:srcCompat="@android:color/background_dark"
+                android:id="@+id/imageView" />
+
+            <TextView
+                android:text="Condong Catur, Sleman, Yogyakarta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_tujuan"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@android:color/black"
+                android:gravity="right" />
+
+            <Button
+                android:text="JEMPUT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_jemput"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:fontFamily="casual"
+                android:textStyle="normal|bold"
+                android:background="@drawable/green_button" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
